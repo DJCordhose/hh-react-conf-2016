@@ -59,7 +59,7 @@
             <p>
                 <a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a>
             </p>
-            <p><a href="TODO">TODO</a></p>
+            <p><a href="http://bit.ly/1oMhAss">http://bit.ly/1oMhAss</a></p>
 
         </section>
 
@@ -153,14 +153,71 @@
             </ul>
         </section>
 
-            <section>
-                <h3>Universal GL Effects for Web and Native</h3>
-                <p>GL shaders described as compositions of React components</p>
-                <!--<img src="shader1.jpg" height="200">-->
-                <img src="shader2.jpg" height="300">
-                <img src="shader3.jpg" height="300">
-                <!--<img src="shader4.jpg" height="200">-->
-            </section>
+        <section>
+            <h3>Universal GL Effects for Web and Native</h3>
+            <p>GL shaders described as compositions of React components</p>
+            <!--<img src="shader1.jpg" height="200">-->
+            <img src="shader2.jpg" height="300">
+            <img src="shader3.jpg" height="300">
+            <!--<img src="shader4.jpg" height="200">-->
+        </section>
+
+        <section>
+            <h3>Redux, Re-frame, Relay, Om/next, oh my!</h3>
+            <p>React is V, but how to C and M?</p>
+            <img src="redux-vs-relay.png" height="500">
+        </section>
+
+        <section>
+            <h2>Performance Without Compromise</h2>
+            <ul>
+                <li class="fragment">Follow-Up on <a href="https://www.youtube.com/watch?v=eNC0mRYGWgc" target="_blank">
+                    React.js Conf 2015 - Beyond the DOM: How Netflix plans to enhance your television experience
+                </a>
+                <li class="fragment">Netflix uses React
+                    <ul>
+                        <li class="fragment">on 600mhz single-core devices in your living room
+                        <li class="fragment">100ms key-input response and 60fps as requirements
+                    </ul>
+                </li>
+                <li class="fragment">possible with a number of hacks
+                    <ul>
+                        <li class="fragment">no refs
+                        <li class="fragment">no mixins or inheritance
+                        <li class="fragment">immutable hierarchical state
+                        <li class="fragment">inline Object Literal creation from React.createElement using Babel
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>A GraphQL Framework in Non-JS Servers</h2>
+            <ul>
+                <li class="fragment"><a href="http://graphene-python.org/" target="_blank">
+                    GraphQL in Python
+                </a>
+                <li class="fragment">REST with React sucks
+                    <ul>
+                        <li class="fragment">many calls for each type of data
+                        <li class="fragment">many rerenders
+                        <li class="fragment">one Store per Type
+
+                    </ul>
+                </li>
+                <li class="fragment">one Endpoint per use-case also sucks
+                    <ul>
+                        <li class="fragment">tight coupling
+                    </ul>
+                </li>
+                <li class="fragment">GraphQL for the win
+                    <ul>
+                        <li class="fragment">best of both worlds
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
 
         <section>
             <h3>Speeding up Startup for Large React Apps</h3>
@@ -177,12 +234,65 @@
                 </ul>
         </section>
 
+        <section>
+            <h3>Rethinking All Practices: Building Applications in Elm</h3>
+            <ul>
+                <li class="fragment">Elm provides flux/redux style of architecture
+                <li class="fragment">Elm Language
+                    <ul>
+                        <li class="fragment">has no runtime errors
+                        <li class="fragment">type system not optional
+                        <li class="fragment">type system similar to Haskell / ML
+                        <li class="fragment">Pure functions
+                        <li class="fragment">statelessness
+                        <li class="fragment">only immutable data
+                    </ul>
+                </li>
+                <li class="fragment">All that is the way to go, not optional
+            </ul>
+        </section>
+
+        <section>
+            <h3>Optimising React Native: Tools and Tips</h3>
+            <p>Don”t assume, profile!</p>
+            <img src="profile.jpg" height="500">
+        </section>
 
         <section>
             <section>
                 <h3>Back to React</h3>
-                <p>Best talk of conference for me</p>
+                <p>functional programming with React</p>
                 <img src="acdlite.jpg" height="500">
+            </section>
+            <section>
+                <h3>Cycle.js</h3>
+                <img src="cycle.png" height="500">
+            </section>
+            <section>
+                <h3>pure vs impure</h3>
+                <ul>
+                    <li class="fragment">React Components
+                        <ul>
+                            <li class="fragment">pure: render
+                            <li class="fragment">impure: setState, lifecycle methods
+                            <li class="fragment">in between: props passing
+                        </ul>
+                    </li>
+                    <li class="fragment">Cycle
+                        <ul>
+                            <li class="fragment">pure: main()
+                            <li class="fragment">impure: drivers
+                            <li class="fragment">in between: sources and sinks
+                        </ul>
+                    </li>
+                    <li class="fragment">Elm
+                        <ul>
+                            <li class="fragment">pure: view, reducer
+                            <li class="fragment">impure: JavaScript
+                            <li class="fragment">in between: ports, tasks, effects
+                        </ul>
+                    </li>
+                </ul>
             </section>
         </section>
 
